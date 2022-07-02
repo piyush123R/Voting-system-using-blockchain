@@ -1,0 +1,28 @@
+body{
+    background-image: url(images/WhatsApp\ Image\ 2022-05-01\ at\ 6.45.07\ PM.jpeg);
+    background-size: 600px 600px;
+    height:100%;
+   /* border: 2px solid red; */
+   color: aliceblue;
+
+}
+#viewchip{
+    margin: 15px;
+    background-image: url(images/finger.jpg);
+    background-size: cover;
+    width:200px;
+    height:80px;
+}
+#viewchip:hover{
+    border: 5px solid whitesmoke;
+}
+.details{
+    font-size: 23px;
+}
+#bt{
+    background-color: limegreen;
+}
+#head{
+    margin-left: 20px;
+   padding: 20px;
+}

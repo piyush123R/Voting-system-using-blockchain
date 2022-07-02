@@ -1,0 +1,51 @@
+.type1
+{  
+   /* border: 2px solid brown; */
+   width:300px;
+   height:320px;
+   margin-left: 300px;
+   background-color: lightcyan;
+   /*background-image: url(images/symbols\ with\ code.jpg);*/
+   background-image: url(images/party_new.png);
+
+   background-size: 290px 320px;
+}
+
+.container-fluid{
+    color: aliceblue;
+    margin: 0px;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+#registerchip:hover{
+    border:2px solid hotpink;
+}
+body{
+    background-image: url(images/WhatsApp\ Image\ 2022-05-01\ at\ 6.45.07\ PM.jpeg);
+    background-size: 600px 600px;
+    height:100%;
+   /* border: 2px solid red; */
+
+}
+.form-control{
+     width:75%;
+     /* margin: 10px; */
+     /* border:2px solid lawngreen;  */
+}
+.form-group{
+    margin: 10px;
+    padding:5px;
+    /* border: 2px double  firebrick; */
+}
+#registerchip
+{
+   background-image: url(images/finger.jpg);
+   background-size: cover;
+   width:70px;
+   height:37px;
+   border-radius: 9px;
+}
+#registerchip:hover{
+    border:5px solid white;
+   
+}

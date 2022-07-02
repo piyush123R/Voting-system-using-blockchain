@@ -1,0 +1,23 @@
+body{
+    background-image: url(images/WhatsApp\ Image\ 2022-05-01\ at\ 6.45.07\ PM.jpeg);
+    background-size: 600px 600px;
+    height:100%;
+   /* border: 2px solid red; */
+   color: aliceblue;
+
+}
+#transferchip{
+   margin-top: 25px;
+    margin-left: 15px;
+    width:150px;
+    height:60px;
+    background-image: url(images/finger.jpg);
+    background-size: cover;
+    border-radius: 24px;
+}
+#transferchip:hover{
+    border: 6px solid whitesmoke;
+}
+#tr{
+    padding: 25px;
+}

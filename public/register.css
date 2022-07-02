@@ -1,0 +1,42 @@
+#signupbox{
+    margin-top: 25px;
+   
+}
+.panel-body
+{ background-image: url(images/photo-1619059617660-d42ec4abe29a.avif);
+    background-color: rgb(179, 255, 0);
+    background-size: cover;
+    border-radius: 6px;
+    margin: 5px;
+   
+}
+body
+{  
+    background-color:#ff9933;
+    background-image: url(images/WhatsApp\ Image\ 2022-05-01\ at\ 6.45.07\ PM.jpeg);
+     
+}
+#btn-signup
+{
+    background-image: url(twofinger.jpg);
+    background-size: cover;
+    border-radius: 6px 6px 6px 6px;
+    width:40%;
+    height:45px;
+}
+#btn-signup:hover{
+  border: 2px solid hotpink;
+}
+#signinlink
+{  font-size: medium;
+    color: rgb(255, 136, 0);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#btn-signup
+{
+    margin-top: 0px;
+}
+.text-center
+{
+  color: rgb(229, 233, 12);
+}

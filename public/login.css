@@ -1,0 +1,50 @@
+#btn-login{
+    
+    background-size: cover;
+    border-radius: 6px 6px 6px 6px;
+   
+    width:20%;
+    height:40px;
+}
+#btn-login:hover{
+             border: 2px solid hotpink;
+}
+body{
+    background-image: url(images/WhatsApp\ Image\ 2022-05-01\ at\ 6.45.07\ PM.jpeg);
+   
+    
+    
+}
+#loginbox
+{opacity: 1;
+   margin-top: 50px;
+   /*border: 2px solid red; */
+   width: 600px;
+   height:100%;
+  
+}
+.panel panel-info
+{   margin-left: 10px;
+    
+}
+.text-center{
+    margin-bottom: 0px;
+  color: blanchedalmond;
+}
+#myselect
+{
+    margin-bottom: 25px;
+
+}
+#myselect:hover
+{
+    color: red;
+}
+.panel-body
+ {  background-image: url(images/twofinger.jpg); 
+    
+    /* background-color: rgb(179, 255, 0); */
+    background-size: cover ;
+    margin: 11px;
+   
+}

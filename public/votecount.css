@@ -1,0 +1,29 @@
+body{
+    background-image: url(images/WhatsApp\ Image\ 2022-05-01\ at\ 6.45.07\ PM.jpeg);
+    background-size: 600px 600px;
+    height:100%;
+   /* border: 2px solid red; */
+    color: aliceblue;
+
+}
+#ch{
+    font-size: 36px;
+   margin-left: 5px;
+   margin-bottom: 20px;
+   margin-top: 20px;
+}
+#lower{
+    font-size: 27px;
+}
+#track{
+   margin-top: 20px;
+   margin-left: 14px;
+    width:200px;
+    height:80px;
+    background-image: url(images/finger.jpg);
+    background-size: cover;
+    border-radius: 34px;
+}
+#track:hover{
+    border: 6px solid whitesmoke;
+}
