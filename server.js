@@ -7,8 +7,6 @@ var Web3 = require('web3');
 var web3 = new Web3();
 var path = require('path');
 var http = require('http');
-
-// web3.setProvider(new Web3.providers.HttpProvider("http://localhost:8085"));
 web3.setProvider(new Web3.providers.HttpProvider("http://127.0.0.1:7545"));
 
 var abi =[
@@ -326,7 +324,6 @@ var abi =[
 	}
 ];
 var contadd = "0xa85cfF09fFc7BbB88a9271FC7549e551bDd78322";
-// var contadd = "0x80C8Af0663c9a78e74d340251e589752f49A01A6";
 var con = web3.eth.contract(abi).at(contadd);
 app.use(cors());
 // app.use(bodyparser.json()); //utilizes the body-parser package
@@ -337,26 +334,9 @@ app.use(express.static(path.join(__dirname, '/public')));
 app.post('/setvoter', function (req, res) {
 	// try{
 	var usr = req.body.username;
-	var pass = req.body.password;
-
-	// var addr = 0x99559a9AD5f56C3CEB0A3EA445572800cfa42177 ; 
+	var pass = req.body.password; 
 	var addr = web3.personal.newAccount("qwerty");
-	// newAccount =  web3.eth.accounts.create();
-
-	// newAccount =  web3.eth.accounts.create();
-	// console.log("New Account is :", newAccount);
-
-	// const amount = 2; // Willing to send 2 ethers
-	// const amountToSend = web3.utils.toWei(String(amount), "ether"); // Convert to wei value
-	// var send = web3.eth.sendTransaction({ from: "0x3EA9fEd0dc4C0fee9dAaA68C5fFf210Ef7632FB6", to: newAccount.address, value: amountToSend });
-
-	// var account = web3.eth.accounts.create().address;
-	// var addr1 = web3.fromAscii(usr) ; 
-	// var pass1 = web3.fromAscii(p) ; 
 	var type = req.body.usertype;
-
-	// var t = con.setstakeholders(usr, pass, addr, type, { from: web3.eth.accounts[0], gas: 0x493E0 });
-	// var p = con.setstakeholders(usr, pass, addr , type, { from: web3.eth.accounts[0], gas: 0x493E0 }); lastedit
 	var p = con.setcurrent_user(usr, pass, addr , type, { from: web3.eth.accounts[0], gas: 0x493E0 });
 	web3.eth.sendTransaction({ from: web3.eth.coinbase, to: addr, value: web3.toWei(1, "ether") })
 	var z = con.getID() ; 
@@ -461,7 +441,6 @@ app.post('/editvote', function (req, res) {
 	let _stk2 = parseInt(req.body.stk2);
 	console.log(_stk1);
 	console.log(_stk2);
-	// let a = con.getstakeholders.call(_stk1);
 	let a = con.getcurrent_users.call(_stk1);
 	let address1 = a[2];
 	console.log(address1)
@@ -502,8 +481,6 @@ app.post('/voter', (req, res) => {
 
 app.post('/getvoter', (req, res) => {
 	let _uid = req.body.uid;
-
-	// let p = con.getstakeholders.call(_uid);
 	let p = con.getcurrent_user.call(_uid);
 
 	res.send(web3.toAscii(p[0]).replace(/\0/g, '') + "Pass: " + web3.toAscii(p[1]).replace(/\0/g, '') +
