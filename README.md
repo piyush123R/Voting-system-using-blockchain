@@ -29,6 +29,9 @@ Edited Vote Details :
 
 ![detailAfterEdit](https://user-images.githubusercontent.com/58129360/178139775-665edbba-fc90-4ae4-b9f6-87d63cd88251.png)
 
+Functions calls history on Test blockchain  :
+
+![ganache](https://user-images.githubusercontent.com/58129360/178140370-b43547ae-4c27-4f6f-8c32-13d362637ab4.png)
 
 
 
